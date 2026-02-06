@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+    <header>
+        <nav class="spotify_header">
+            <div class="left_mid_wrapper">
+                <div class="left_section">
+                    <!--Spotify logo-->
+                    <img src="svg/logo.svg" alt="Spotify Logo" class="spotify_logo">
+                </div>
+
+                <div class="mid_section">
+                    <ul class="mid_nav">
+                        <!--Home Button-->
+                        <li class="home_btn">
+                            <img src="svg/home.svg" alt="home">
+                            <span>Home</span>
+                        </li>
+
+                        <!--Search Bar-->
+                        <li>
+                            <div class="search_box">
+                                <img src="svg/search.svg" alt="search" class="search_icon">
+                                <span>Search</span>
+                                <input type="text" placeholder="What do you want to play?">
+                                <div class="divider">|</div>
+                                <img src="svg/browse.svg" alt="Browse" class="browse_icon">
+                                <span>Browse</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_section">
+                <ul class="right_nav">
+
+                    <li class="right_nav_link1"><a href="#">Premium</a></li>
+                    <li class="right_nav_link1"><a href="#">Support</a></li>
+                    <li class="right_nav_link1"><a href="#">Download</a></li>
+
+                    <li class="divider">|</li>
+                    <li class="install_section">
+                        <img src="svg/install.svg" alt="Install App">
+                        <a href="#">Install App</a>
+                        <span>Install App</span>
+                    </li>
+                    <li><a href="#" class="SignUp">Sign Up</a></li>
+                    <li><a href="#" class="LogIn">Log In</a></li>
+                </ul>
+                <button class="hamburger" id="hamburgerBtn">
+                    <img src="svg/hamburger.svg" alt="Menu">
+                </button>
+                <div class="hamburger_menu" id="hamburgerMenu">
+                    <a href="#">Premium <img src="svg/external.svg" alt="external" class="menu_icon"></a>
+                    <a href="#">Support <img src="svg/external.svg" alt="external" class="menu_icon"></a>
+                    <a href="#">Download <img src="svg/external.svg" alt="external" class="menu_icon"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <div class="library">
+            <div class="library_header">
+                <div class="library_top">
+                    <h2>Your Library</h2>
+                    <img src="svg/playlist.svg" alt="Playlist" height="20px">
+                    <span>Create playlist or folder</span>
+                </div>
+                <div class="library_items">
+                    <div class="create_playlist">
+                        <h2>Create your first playlist</h2>
+                        <h3>It's easy, we'll help you</h3>
+                        <button class="create_playlist_btn">Create Playlist</button>
+                    </div>
+                    <div class="browse_podcasts">
+                        <h2>Let's find some podcasts to follow</h2>
+                        <h3>We'll find you updated on new episodes</h3>
+                        <button class="browse_podcasts_btn">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+            <div class="library_footer">
+                <ul>
+                    <li><a href="https://www.spotify.com/in-en/legal/end-user-agreement/"><span>Legal</span></a></li>
+                    <li><a href="https://www.spotify.com/in-en/safetyandprivacy"><span>Safety & Privacy Center</span></a></li>
+                    <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </li>
+                    <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></li>
+                    <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></li>
+                    <li><a href="https://www.spotify.com/in-en/accessibility"><span>Accessibility</span></a></li>
+                </ul>
+                <span>Cookies</span>
+                <button class="lang">
+                    <img src="svg/langlogo.svg" alt="language" height="15px">
+                    <span>English</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="main_top">
+        <div class="Trending_Songs">
+            <div class="Trending_header">
+                <h1>Trending Songs</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="song_container">
+                <div class="song_card ">
+                    <img src="TrendingImages/ShriKrishnHareGovindMurari.jpeg" alt="Shri Krishna Govind Hare Murari Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Shri Krishna Govind Hare Murari</h2>
+                    <p>Jubin Nautiyal</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Tum Prem Ho (Reprsie).jpeg" alt="Tum Prem Ho (Reprsie) Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Tum Prem Ho (Reprsie)</h2>
+                    <p>Mohit Lalwani, Bharat Kamal</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Woh Kishna Hai.jpeg" alt="Woh Kisna Hai Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Woh Kisna Hai</h2>
+                    <p>Sukhwinder Singh, Ayesha Darbar, S. Shailaja</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Wo kanha Ab To Murli.jpeg" alt="O Kanha Ab To Murli Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>O Kanha Ab To Murli</h2>
+                    <p>Chetna</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Radha Gori Gori.jpeg" alt=" Radha Gori Gori Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Radha Gori Gori</h2>
+                    <p>Indresh Upadhyay, B Praak</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Soja Jara.jpeg" alt="Soja Jara Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Soja Jara</h2>
+                    <p>Madhushree, Manoj Munstashir</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Radha kaise Na Jale.jpeg" alt="Radha Kaise Na Jale Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Radha Kaise Na Jale (From "Lagaan")</h2>
+                    <p>Asha Bhosle, Udit Narayan, Vaishali Samant,A.R....</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Oh! Mama TETEMA.jpeg" alt="Oh! Mama TETEMA Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Oh Mama! TETEMA</h2>
+                    <p>Rayvanny, Vishal Mishra, Shreya Ghoshal, Nora...</p>
+                </div>
+
+                <div class="song_card">
+                    <img src="TrendingImages/Monica.jpeg" alt="Monica Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Monica</h2>
+                    <p>Anirudh Ravichander, Sublahshini, ASal Kolaar</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Mere Banke Bihari Lal.jpeg" alt="Meri Banke Bihari Lal Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Meri Banke Bihari Lal</h2>
+                    <p>Madhavas Rock Band</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Shyam Chudi Bechne Aaya.jpeg" alt="Shyam Chudi Bechne Aaya Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Shyam Chudi Bechne Aaya</h2>
+                    <p>Maanya Arora</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/AZUL.jpeg" alt="AZUL Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>AZUL</h2>
+                    <p>Guru Randhawa, Gurjit Gill, Lavish Dhiman</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Radhe Radhe Barsane Wali Radhe.jpeg" alt="Radhe Radhe Barsane Wali Radhe Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Radhe Radhe Barsane Wali Radhe</h2>
+                    <p>Vipul</p>
+                </div>
+                <div class="song_card">
+                    <img src="TrendingImages/Ganpati Aarti.jpeg" alt="Ganpati Aarti Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Ganpati Aarti</h2>
+                    <p>Amitabh Bachchan</p>
+                </div>
+            </div>
+        </div>
+        <div class="Popular_Artists">
+            <div class="Popular_header">
+                    <h1>Popular Artists</h1>
+                    <h3>Show all</h3>
+            </div>
+            <div class="artist_container">
+                <div class="artist_card">
+                    <img src="PopularArtists/Pritam.jpeg" alt="Pritam Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Pritam</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/A.R.Rahman.jpeg" alt="A.R.Rahman Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>A.R.Rahman</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Arijit Singh.jpeg" alt="Arijit Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Arijit Singh</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Sachin-Jigar.jpeg" alt="Sachin-Jigar Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Sachin-Jigar</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Vishal Shekhar.jpeg" alt="Vishal Shekhar Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Vishal-Shekhar</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Atif Aslam.jpeg" alt="Atif Aslam Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Atif Aslam</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Anirudh Ravichander.jpeg" alt="Anirudh Ravichander Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Anirudh Ravichander</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Udit Narayan.jpeg" alt="Udit Narayan Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Udit Narayan</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Yo Yo Honey Singh.jpeg" alt="Yo Yo Honey Singh Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Yo Yo Honey Singh</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="artist_card">
+                    <img src="PopularArtists/Shankar-Ehsaan-Loy.jpeg" alt="Shankar-Ehsaan-Loy Image">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Shankar-Ehsaan-Loy</h2>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="Popular_albums_and_singles">
+            <div class="Popular_albums_and_singles_header">
+                <h1>Popular albums and singles</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="albumsandsingles_container">
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/Aashiqui2.jpeg" alt="Aashiqui2 img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Aashiqui2</h2>
+                    <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/YehJawaaniHaiDeewani.jpeg" alt="Yeh Jawaani Hai Deewani img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Yeh Jawaani Hai Deewani</h2>
+                    <p>Pritam</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/Sanam Teri Kasam.jpeg" alt="Sanam Teri Kasam img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Sanam Teri Kasam</h2>
+                    <p>HImesh Reshammiya,Sammer Anjaan, Subrat...</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/FindingHer.jpeg" alt="Finding Her img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Finding Her</h2>
+                    <p>Kushagra, Bharath,Saaheal</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/YoungGoat.jpeg" alt="Young Goat img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Young G.O.A.T</h2>
+                    <p>Cheema Y, Gur Sidhu</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/Raanjhan.jpeg" alt="Raanjhan img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Raanjhan (From "Do Patto")</h2>
+                    <p>Sachet-Parampara, Parampara Tandon, Kaus...</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/UltimateLongSongs.jpeg" alt="Ultimate Love Songs img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Ulimate Long Songs - Arijit Singh</h2>
+                    <p>Arijit Singh</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/MakingMemories.jpeg" alt="Making Memories img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Making Memories</h2>
+                    <p>Karan Aujla, Ikky</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/MooseTape.jpeg" alt="Moosetape img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Moosetape</h2>
+                    <p>Sidhu Moose Wala</p>
+                </div>
+                <div class="albumsandsingles_card">
+                    <img src="PopularAlbums/Sicario.jpeg" alt="Sicario img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <h2>Sicario</h2>
+                    <p>Shubh</p>
+                </div>
+            </div>
+        </div>
+        <div class="Popular_Radio">
+            <div class="Popular_Radio_header">
+                <h1>Popular Radio</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="radio_container">
+                <div class="radio_card">
+                    <img src="PopularRadio/ArijitSingh.jpeg" alt="Arijit Singh img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Sachin-Jigar, Jeet Gannguli, Sachet Tando...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/KK.jpeg" alt="K.K. img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Pritam, Mustafa Zahid, Atif Aslam and...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/ShreyaGhoshal.jpeg" alt="Shreya Ghosal img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With A.R.Rahman, Ajay-Atul, Salim-Sulaiman...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/AlkaYagnik.jpeg" alt="Alka Yagnik img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Kumar Sanu, Vinod Rathod, Udit Narayan...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/DiljitDosanjh.jpeg" alt="Diljit Dosanjh img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Karan Aujla, Sidhu Moose Wala, AP Dhillon...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/A.R.Rahman.jpeg" alt="A.R.Rahman img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With G.V. Prakash, Yuvan Shankar Raja, Hariharan...</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/YoYoHoneySingh.jpeg" alt="Yo Yo Honey Singh img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Badshah, Harrdy Sandhu, Alfaaz and more</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/SidhuMooseWala.jpeg" alt="Sidhu Moose Wala img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With AP Dhillon, Tegi Pannu, Gurinder Gill an..</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/KishoreKumar.jpeg" alt="Kishore Kumar img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Mukesh, Hemant Kumar, Tabassum and..</p>
+                </div>
+                <div class="radio_card">
+                    <img src="PopularRadio/KumarSanu.jpeg" alt="Kumar Sanu img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>With Alka Yagnik, Jatin-Lalit, Anuradha Paudwa..</p>
+                </div>
+            </div>
+        </div>
+        <div class="Featured_Charts">
+            <div class="Featured_Charts_header">
+                <h1>Featured Charts</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="charts_container">
+                <div class="charts_card">
+                    <img src="FeaturedCharts/TopsSongGlobal.jpg" alt="Top Songs Global img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your Weekly update of the most played tracks...</p>
+                </div>
+                <div class="charts_card">
+                    <img src="FeaturedCharts/TopSongsIndia.jpg" alt="Top Songs India img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your weekly update of the most played tracks...</p>
+                </div>
+                <div class="charts_card">
+                    <img src="FeaturedCharts/Top50Global.jpg" alt="Top 50 Global img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your daily update of the most played tracks righ...</p>
+                </div>
+                <div class="charts_card">
+                    <img src="FeaturedCharts/Top50India.jpg" alt="Top 50 Indiaimg">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your daily update of the most played tracks righ...</p>
+                </div>
+                <div class="charts_card">
+                    <img src="FeaturedCharts/Viral50Global.jpg" alt="Viral 50 Global img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your daily update of the most viral tracks right...</p>
+                </div>
+                <div class="charts_card">
+                    <img src="FeaturedCharts/Viral50India.jpg" alt="Viral 50 India img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Your daily update of the most viral tracks right...</p>
+                </div>
+            </div>
+        </div>
+        <div class="Indias_Best">
+            <div class="Indias_Best_header">
+                <h1>India's Best</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="best_container">
+                <div class="best_card">
+                    <img src="IndiasBest/HottestIndia.jpeg" alt="Hottest Hindi img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Hottest Hindi music that India is listening to...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/HottestTrack.jpeg" alt="Hottest Tracks img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Hottest tracks from your favourite I-Pop Icons...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/BollywoodCentral.jpeg" alt="Bollywood Central img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Bollywood Central, jab baje toh seedha dil ke...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/UltimatePunjabi101.jpeg" alt="img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Ultimate 101 Punjabi Hits with Karan Aujla</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/IndiaRap.jpeg" alt=" India Rap img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>India's Rap Scene. Cover- Dhanda Nyoliwala</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/FinestTamilCollection.jpeg" alt="Finest Tamil Collection img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Finest collection of Tamil Music from the past 10...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/MostExcitingArtist.jpeg" alt="Most exciting artists img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Most exciting artists from the Inidan Indie...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/BiggestHaryanaviHits.jpeg" alt="Biggest Haryanvi hits img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Biggest Haryanvi hits from the last 10 years...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/FinestTelegu.jpeg" alt="Finest Telegu img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>The finest set of Telugu music from the past 10...</p>
+                </div>
+                <div class="best_card">
+                    <img src="IndiasBest/BestIndian.jpeg" alt="Best Indian img">
+                    <div class="play_btn">
+                        <img src="svg/playbtn.svg" alt="play btn">
+                    </div>
+                    <p>Best of the Indian Indie scene. Cover- Faheem...</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="main_footer">
+            <div class="main_footer_content">
+            <div class="left_main_footer">
+                <div class="leftfooter_column">
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="leftfooter_column">
+                    <ul>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">For Artists</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="leftfooter_column">
+                    <ul>
+                        <li><a href="#">Useful Links</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Free Mobile App</a></li>
+                        <li><a href="#">Popular by Country</a></li>
+                        <li><a href="#">Import your music</a></li>
+                    </ul>
+                </div>
+                <div class="leftfooter_column">
+                    <ul>
+                        <li><a href="#">Spotify Plans</a></li>
+                        <li><a href="#">Premium Individual</a></li>
+                        <li><a href="#">Premium Duo</a></li>
+                        <li><a href="#">Premium Family</a></li>
+                        <li><a href="#">Premium Student</a></li>
+                        <li><a href="#">Spotify Free</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_main_footer">
+                <div class="rightmainfooter_icon">
+                    <img src="svg/instagram.svg" alt="Instagram">
+                </div>
+                <div class="rightmainfooter_icon">
+                    <img src="svg/twitter.svg" alt="Twitter">
+                </div>
+                <div class="rightmainfooter_icon">
+                    <img src="svg/facebook.svg" alt="Facebook">
+                </div>
+            </div>
+            </div>
+            <p class="main_footer_bottom">&#169; 2025 Spotify AB</p>
+        </footer>
+    </main>
+    <footer class="footer_outside">
+        <div class="footer_outside_left">
+            <h3>Preview of Spotify</h3>
+        <p>Sign up to get unlimited songs and podcasts with occassional ads. No credit card neeeded.</p>
+        </div>
+        <button class="SignUpFree">Sign up free</button>
+    </footer>
+    <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
